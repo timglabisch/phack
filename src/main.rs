@@ -38,7 +38,7 @@ fn main() {
     );
 
     // nun wollen wir wissen, welche Pakete unser Projekt benötigt,
-    / wenn alles gut geht, dann wird uns das Programm mitteilen, dass wir symfony und symfony/finder benötigen.
+    // wenn alles gut geht, dann wird uns das Programm mitteilen, dass wir symfony und symfony/finder benötigen.
     let packages = vec![
         dep("base_project", "*"),
     ];
