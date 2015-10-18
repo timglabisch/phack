@@ -5,6 +5,7 @@ extern crate rustc_serialize;
 #[macro_use]
 mod easy_resolver;
 mod composer_parser;
+mod composer_vendor_parser;
 mod dependency_container;
 mod flatten_dependency_resolver;
 use cargo::core::{Dependency, Summary};
