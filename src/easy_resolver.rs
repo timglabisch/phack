@@ -24,7 +24,7 @@ pub fn pgk_idv(s: String, vers: String) -> PackageId {
     PackageId::new(&s, &vers, &registry_loc()).unwrap()
 }
 
-pub fn resolve<R: Registry>(deps: Vec<Dependency>,registry: &mut R)-> CargoResult<Vec<PackageId>> {
+pub fn resolve<R: Registry>(deps: Vec<Dependency>, registry: &mut R)-> CargoResult<Vec<PackageId>> {
     let pkg = pkg_id("root");
     let summary = Summary::new(pkg, deps, HashMap::new()).unwrap();
     let method = Method::Everything;
